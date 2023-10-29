@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-raleway text-neutral-500;
+    scroll-behavior: smooth;
+    font-size: max(calc(16 * (100vw / 1920)), 16px);
+  }
+  *:focus-visible {
+    outline: none;
+  }
+
+  @media screen and (max-width: 767px) {
+    input,
+    select,
+    textarea {
+      font-size: 1rem;
+    }
+  }
+}
+
+@layer utilities {
+  .title-mobile {
+    @apply font-sans text-title-mobile font-bold;
+  }
+  .title-desktop {
+    @apply font-sans text-title-desktop font-medium;
+  }
+
+  .subtitle-mobile {
+    @apply text-subtitle-mobile  font-medium;
+  }
+  .subtitle-desktop {
+    @apply text-subtitle-desktop font-medium;
+  }
+  .form-label {
+    @apply font-semibold text-neutral-900 text-sm;
+  }
+
+  .circular-container {
+    @apply flex items-center justify-center rounded-full flex-shrink-0;
+  }
+}
+
+.SnackbarItem-contentRoot {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15) !important;
+  @apply bg-white text-black rounded-md py-2 px-4 font-sans !important;
+}
+.SnackbarItem-variantError {
+  @apply text-error-900  text-sm !important;
+}
+
+.SnackbarItem-variantSuccess {
+  @apply text-success-500 text-sm !important;
+}
+.swiper-pagination-bullet {
+  background-color: #38aee1 !important;
+}
+
+.swiper-pagination {
+  bottom: 0px !important;
+  position: relative !important;
+}
+
+.active {
+  background-color: #38aee1 !important;
+  opacity: 1 !important;
+  width: 22px !important;
+  height: 8px !important;
+  border-radius: 10px !important;
+}
+.el {
+  background-color: red !important;
+}
