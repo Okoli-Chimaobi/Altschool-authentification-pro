@@ -30,7 +30,7 @@ export default function Layout() {
             text with their software.
           </p>
           <div className="flex items-center text-2xl mt-10">
-            <h2 className="mr-2">Obianuju Okoli</h2>
+            <h2 className="mr-2">Chimaobi Okoli</h2>
             <Check />
           </div>
           <div className="flex justify-end mt-10 mr-5">
